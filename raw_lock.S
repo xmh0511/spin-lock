@@ -2,9 +2,9 @@
 raw_lock:
 pushq %rbp
 movq  %rsp, %rbp
-movl %edx, %eax
+movb %dl, %al
 movq %rdi, %rcx
-movl %esi, %edx
-lock cmpxchg %edx,(%rcx)
+movb %sil, %dl
+lock cmpxchg %dl,(%rcx)
 popq  %rbp
 retq

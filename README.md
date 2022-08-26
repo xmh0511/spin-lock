@@ -1,3 +1,3 @@
 # spin-lock
 
-> g++ spin_lock.cpp raw_lock.S -std=c++20
+> g++ main.cpp raw_lock.S -std=c++20 -O3
