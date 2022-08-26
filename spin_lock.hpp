@@ -1,5 +1,5 @@
 
-extern "C" char raw_lock(char *addr, char change, char expect) asm("raw_lock");
+extern "C" char raw_lock(char *addr, char change, char expect);
 
 struct SpinLock
 {

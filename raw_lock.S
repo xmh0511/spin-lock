@@ -1,5 +1,5 @@
-.globl raw_lock
-raw_lock:
+.globl _raw_lock
+_raw_lock:
 pushq %rbp
 movq  %rsp, %rbp
 movb %dl, %al
